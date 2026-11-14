@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = "https://earth-system-trend-detective-ten.vercel.app";
 
 async function get(path, params = {}) {
   const query = new URLSearchParams(params).toString();
