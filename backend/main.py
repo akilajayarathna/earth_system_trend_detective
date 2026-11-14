@@ -22,6 +22,7 @@ app = FastAPI(title="Climate Clue API", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_methods=["GET"],
     allow_headers=["*"],
 )
