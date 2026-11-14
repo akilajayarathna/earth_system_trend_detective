@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-typewriter: "Special Elite", ui-monospace, monospace;
+
+  --animate-fade-up: fade-up 0.8s ease-out both;
+  --animate-sweep: sweep 4s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-blink: blink 1s steps(2) infinite;
+  --animate-stamp: stamp 0.5s ease-out both;
+  --animate-drift: drift 14s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes sweep {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes stamp {
+    from {
+      opacity: 0;
+      transform: scale(2.4) rotate(-14deg);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) rotate(-6deg);
+    }
+  }
+  @keyframes drift {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    50% {
+      transform: translate(40px, -30px) scale(1.15);
+    }
+  }
+}
+
+body {
+  background: #020617;
+  color: #e2e8f0;
+  font-family: "Inter", system-ui, sans-serif;
+}
