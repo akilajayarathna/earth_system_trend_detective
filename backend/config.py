@@ -5,7 +5,7 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 DATA_PATH = BASE_DIR / "data" / "gldas_region_temperature.csv"
 
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "https://earth-system-trend-detective-w1bp.vercel.app").split(",")
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "https://earth-system-trend-detective-6pi1.vercel.app/").split(",")
 
 MIN_MONTHS = 36
 
