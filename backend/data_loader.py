@@ -12,6 +12,7 @@ def load_data():
 
 
 def get_data():
+    global _df
     if _df is None:
-        raise RuntimeError("Data not loaded")
+        load_data()
     return _df
